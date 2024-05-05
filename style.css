@@ -1,0 +1,49 @@
+:root {
+    --goldMain : #E3B579 ;
+    --lightGreen : #B5D9D7;
+    --myGreen : #68A19B;
+    --myDarkBlue : #0D1E32;
+}
+
+@keyframes flash {
+    0%, 100% { background-color: white; }
+    50% { background-color: var(--myGreen); }
+}
+
+body {
+    background-color: var(--goldMain);
+}
+
+h1 {
+    color: var(--myDarkBlue);
+    background-color: var(--myGreen);
+    text-shadow: 3px 3px 3px var(--goldMain);
+}
+
+/* .box-contatti {
+    border: 3px solid red;
+    height: auto;
+} */
+
+.btn {
+    width: 200px;
+    
+}
+
+
+
+span {
+    width: 160px;
+}
+
+.icons:hover, .modicons:hover {
+    cursor: pointer;
+}
+
+.inButton {
+    display: flex;
+}
+
+.flashing {
+    animation: flash 1.1s infinite;
+}
